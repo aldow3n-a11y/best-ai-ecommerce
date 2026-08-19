@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best AI Tools for Ecommerce & DTC Brands — 2026 Roundup</title>
+<meta name="description" content="An editorial roundup of 12 AI tools that actually move revenue for ecommerce and DTC brands — email/SMS, attribution, support, retention, content, personalization, ads, and ops. Free, opinionated, no signup wall.">
+<link rel="canonical" href="https://aldow3n-a11y.github.io/best-ai-ecommerce/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231F3D2E'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='32' font-weight='700' text-anchor='middle' fill='%23F8F4EE'%3EBe%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..900,0..100&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ----- TOKENS ----- */
+:root{
+  --bg:#F8F4EE;
+  --bg-2:#EFE9DD;
+  --ink:#1A1814;
+  --ink-2:#3A352C;
+  --muted:#6B6557;
+  --border:#D9D2BF;
+  --accent:#1F3D2E;
+  --accent-2:#C2410C;
+  --highlight:#F1E9D2;
+
+  --font-display:"Fraunces",Georgia,serif;
+  --font-body:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Consolas,monospace;
+
+  --max:1180px;
+  --gutter:clamp(20px,4vw,56px);
+  --radius:6px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+img{max-width:100%;display:block}
+button{font:inherit;cursor:pointer}
+
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--bg)}
+
+.nav{border-bottom:1px solid var(--border);background:var(--bg);position:sticky;top:0;z-index:10;backdrop-filter:saturate(180%) blur(8px)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:14px var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-family:var(--font-display);font-weight:700;font-size:22px;letter-spacing:-0.01em}
+.brand-mark{width:28px;height:28px;border-radius:7px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:15px}
+.brand-mark::after{content:"Be"}
+.nav-links{display:flex;gap:22px;font-size:14px;color:var(--ink-2);align-items:center}
+.nav-links a{text-decoration:none;color:var(--ink-2);font-weight:500;border-bottom:1px solid transparent;padding-bottom:1px;transition:border-color 0.2s}
+.nav-links a:hover{border-bottom-color:var(--accent-2)}
+@media(max-width:720px){.nav-links a:not(.btn-post){display:none}}
+
+.hero{max-width:var(--max);margin:0 auto;padding:clamp(60px,10vh,120px) var(--gutter) clamp(40px,8vh,80px);display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
+@media(max-width:880px){.hero{grid-template-columns:1fr;gap:24px}}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-2);margin-bottom:18px;display:flex;gap:12px;align-items:center}
+.eyebrow .dot{width:6px;height:6px;background:var(--accent-2);border-radius:50%}
+h1.title{font-family:var(--font-display);font-weight:500;font-size:clamp(40px,6vw,72px);line-height:1.02;letter-spacing:-0.025em;margin:0 0 24px 0;color:var(--ink);font-variation-settings:"opsz" 144,"SOFT" 30}
+h1.title em{font-style:italic;color:var(--accent-2);font-weight:400}
+.lede{font-size:19px;line-height:1.5;color:var(--ink-2);max-width:50ch;margin:0 0 28px 0}
+.byline{font-family:var(--font-mono);font-size:12px;letter-spacing:0.06em;color:var(--muted);text-transform:uppercase;border-top:1px solid var(--border);padding-top:16px;margin-top:24px;display:flex;gap:18px;flex-wrap:wrap}
+.byline strong{color:var(--ink);font-weight:500}
+
+.aside-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg-2);position:relative}
+.aside-card::before{content:"";position:absolute;top:-1px;left:-1px;width:24px;height:24px;background:var(--accent-2);border-radius:var(--radius) 0 var(--radius) 0}
+.aside-card h3{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0 0 8px 0;letter-spacing:-0.01em}
+.aside-card p{font-size:14px;color:var(--ink-2);margin:0 0 16px 0}
+.toc{list-style:none;padding:0;margin:16px 0 0 0;font-family:var(--font-mono);font-size:12px;letter-spacing:0.04em}
+.toc li{padding:8px 0;border-bottom:1px dashed var(--border);display:flex;justify-content:space-between;gap:12px}
+.toc li:last-child{border-bottom:none}
+.toc a{text-decoration:none;color:var(--ink-2);display:flex;justify-content:space-between;gap:12px;flex:1}
+.toc a:hover{color:var(--accent-2)}
+.toc .num{color:var(--muted)}
+
+.container{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:48px 0;border-top:1px solid var(--border)}
+.section-head{margin-bottom:32px}
+.section-head .label{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.section-head .label::after{content:"";flex:1;height:1px;background:var(--border)}
+.section-head h2{font-family:var(--font-display);font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.15;letter-spacing:-0.02em;margin:0;font-variation-settings:"opsz" 144,"SOFT" 50}
+.section-head h2 em{color:var(--accent-2);font-style:italic;font-weight:400}
+
+.prose{max-width:65ch;font-size:17px;color:var(--ink-2);line-height:1.65}
+.prose p{margin:0 0 20px 0}
+.prose h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:32px 0 12px 0;color:var(--ink);letter-spacing:-0.01em}
+.prose ul{margin:0 0 20px 0;padding-left:20px}
+.prose li{margin-bottom:8px}
+.prose strong{color:var(--ink)}
+.prose blockquote{border-left:3px solid var(--accent-2);padding:8px 18px;margin:24px 0;color:var(--ink);font-family:var(--font-display);font-size:19px;font-style:italic;background:var(--highlight)}
+
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:24px 0}
+.tool-card{border:1px solid var(--border);border-radius:var(--radius);padding:24px;background:var(--bg);display:flex;flex-direction:column;gap:8px;transition:transform 0.2s,border-color 0.2s}
+.tool-card:hover{transform:translateY(-3px);border-color:var(--accent-2)}
+.tool-card .rank{font-family:var(--font-mono);font-size:11px;letter-spacing:0.14em;color:var(--accent-2);text-transform:uppercase}
+.tool-card h4{font-family:var(--font-display);font-weight:500;font-size:22px;margin:0;color:var(--ink);letter-spacing:-0.01em}
+.tool-card .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:0.1em;color:var(--muted);text-transform:uppercase}
+.tool-card .desc{font-size:14px;color:var(--ink-2);line-height:1.55;margin:8px 0}
+.tool-card .price{font-family:var(--font-mono);font-size:12px;color:var(--ink-2);padding:6px 10px;background:var(--highlight);border-radius:var(--radius);display:inline-block;margin-top:auto}
+.tool-card .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tool-card .links a{font-family:var(--font-mono);font-size:11px;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:1px}
+.tool-card .links a:hover{border-bottom-color:var(--accent-2)}
+
+.cta-band{margin:32px 0;padding:24px;border:1px solid var(--accent);border-radius:var(--radius);background:var(--highlight);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.cta-band h3{font-family:var(--font-display);font-weight:500;font-size:24px;margin:0 0 6px 0;letter-spacing:-0.01em}
+.cta-band p{margin:0;color:var(--ink-2);font-size:14px;max-width:50ch}
+.cta-band a{background:var(--accent);color:var(--bg);text-decoration:none;padding:12px 22px;border-radius:var(--radius);font-family:var(--font-mono);font-size:13px;letter-spacing:0.04em;font-weight:500;white-space:nowrap}
+.cta-band a:hover{background:var(--accent-2)}
+
+.compare{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px}
+.compare th,.compare td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--border);font-family:var(--font-body)}
+.compare th{font-family:var(--font-mono);font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.compare tbody tr:hover{background:var(--highlight)}
+.compare td:first-child{font-weight:600;color:var(--ink)}
+
+.faq details{border-top:1px solid var(--border);padding:18px 0}
+.faq details:last-child{border-bottom:1px solid var(--border)}
+.faq summary{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-mono);font-size:18px;color:var(--accent-2);transition:transform 0.2s}
+.faq details[open] summary::after{content:"−"}
+.faq .answer{margin-top:12px;color:var(--ink-2);font-size:16px;line-height:1.65}
+
+.disclosure{margin-top:24px;padding:16px;background:var(--bg-2);border-radius:var(--radius);font-size:13px;color:var(--muted);line-height:1.55}
+
+.subscribe{margin:24px 0;display:flex;gap:10px;flex-wrap:wrap;max-width:480px}
+.subscribe input{flex:1;padding:12px 14px;border:1px solid var(--border);border-radius:var(--radius);font-family:var(--font-body);font-size:15px;background:var(--bg)}
+.subscribe input:focus{outline:none;border-color:var(--accent)}
+.subscribe button{background:var(--accent);color:var(--bg);border:none;padding:12px 22px;border-radius:var(--radius);font-family:var(--font-mono);font-size:13px;letter-spacing:0.04em;font-weight:500}
+.subscribe button:hover{background:var(--accent-2)}
+.subscribe-status{margin-top:10px;font-size:13px;color:var(--accent-2);font-family:var(--font-mono)}
+
+footer{padding:48px 0 32px;border-top:1px solid var(--border);margin-top:48px}
+.footer-inner{max-width:var(--max);margin:0 auto;padding:0 var(--gutter);display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.footer-inner a{color:var(--ink-2);text-decoration:none;margin-left:8px}
+.footer-inner a:hover{color:var(--accent-2)}
+
+@media(max-width:600px){
+  .tool-grid{grid-template-columns:1fr}
+  .compare{font-size:13px}
+  .compare th,.compare td{padding:8px 10px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Best AI Tools for Ecommerce & DTC Brands — 2026 Roundup",
+  "description": "An editorial roundup of 12 AI tools that actually move revenue for ecommerce and DTC brands — email/SMS, attribution, support, retention, content, personalization, ads, and ops.",
+  "author": {"@type": "Organization", "name": "Best AI for Ecommerce"},
+  "publisher": {"@type": "Organization", "name": "Best AI for Ecommerce"},
+  "datePublished": "2026-08-22",
+  "dateModified": "2026-08-22",
+  "about": [
+    "ecommerce AI tools",
+    "DTC AI marketing",
+    "Shopify AI apps",
+    "Klaviyo AI",
+    "ecom attribution AI",
+    "AI customer service ecommerce",
+    "AI retention marketing",
+    "AI product description"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What is the single best AI tool for ecommerce in 2026?","acceptedAnswer":{"@type":"Answer","text":"For email/SMS and lifecycle marketing, Klaviyo is the default — Shopify-native, predictive AI, scales with your list. Pair it with Triple Whale (or Northbeam) for attribution, Gorgias (or Tidio) for AI support, and Shopify Magic for content. That four-stack covers ~80% of a DTC brand's AI surface area."}},
+    {"@type":"Question","name":"Is Klaviyo worth the price for a small Shopify store?","acceptedAnswer":{"@type":"Answer","text":"Klaviyo is free up to 250 contacts. Once you cross that, the $45/mo Email tier is worth it the moment your store does ~$5K/mo revenue. The predictive analytics (likely-to-buy, expected next order) usually pay for the subscription within the first campaign."}},
+    {"@type":"Question","name":"What does Triple Whale do that Shopify analytics doesn't?","acceptedAnswer":{"@type":"Answer","text":"Triple Whale solves iOS 14.5+ attribution loss. After Apple's App Tracking Transparency, Shopify's native analytics under-reports Meta and TikTok revenue by 20-40%. Triple Whale stitches post-purchase survey data + click IDs + email engagement to give a single-source ROAS dashboard — critical for any brand spending $10K+/mo on paid social."}},
+    {"@type":"Question","name":"Can AI handle ecommerce customer support end-to-end?","acceptedAnswer":{"@type":"Answer","text":"Tier-1 support (order status, return policy, shipping questions): yes, Gorgias AI Agent or Tidio Lyro can auto-resolve 40-60% of tickets without a human. Tier-2 (complex returns, exchanges, escalations): still needs a human. The realistic 2026 outcome is reducing support headcount cost by ~30% while improving first-response time."}},
+    {"@type":"Question","name":"Do these tools replace a growth marketer?","acceptedAnswer":{"@type":"Answer","text":"No — they replace the boring 60% of a growth marketer's day: subject-line A/B tests, send-time optimization, attribution reconciliation, basic reporting. The remaining 40% — campaign strategy, creative direction, segmentation design, LTV modeling — is still human. Marketers using this stack typically run 2-3x more experiments per month."}},
+    {"@type":"Question","name":"How often is this list updated?","acceptedAnswer":{"@type":"Answer","text":"Every quarter. The ecommerce AI space moves as fast as marketing AI — a tool that's #1 today (Triple Whale) may be #4 next month when a new attribution entrant launches. Last refresh: August 2026."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+<div class="nav-inner">
+<a href="/best-ai-ecommerce/" class="brand"><span class="brand-mark"></span>Best AI for Ecommerce</a>
+<div class="nav-links">
+<a href="#email">Email/SMS</a>
+<a href="#attribution">Attribution</a>
+<a href="#support">Support</a>
+<a href="#retention">Retention</a>
+<a href="#content">Content</a>
+<a href="#personalization">Personalization</a>
+<a href="#ads">Ads</a>
+<a href="#compare">Compare</a>
+<a href="#faq">FAQ</a>
+<a href="#alerts" class="btn-post">Get updates</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div>
+<div class="eyebrow"><span class="dot"></span>2026 Roundup · 12 tools · 8 categories</div>
+<h1 class="title">Best <em>AI tools</em> for ecommerce and DTC brands.</h1>
+<p class="lede">An opinionated roundup of the AI tools that actually move revenue for Shopify stores and DTC brands — covering email/SMS, attribution, support, retention, content, personalization, and ads. Free, no signup wall, no sponsored placements.</p>
+<div class="byline">
+<span><strong>By</strong> Discus</span>
+<span><strong>Updated</strong> August 2026</span>
+<span><strong>Read</strong> ~12 min</span>
+<span><strong>Verticals</strong> Shopify · DTC · Ecom</span>
+</div>
+</div>
+<aside class="aside-card">
+<h3>On this page</h3>
+<p>The 12 tools, ranked. Every category has an Editor's pick and a runner-up where it makes sense.</p>
+<ul class="toc">
+<li><a href="#email"><span>01 Email & SMS</span><span class="num">2 tools</span></a></li>
+<li><a href="#attribution"><span>02 Attribution</span><span class="num">2 tools</span></a></li>
+<li><a href="#support"><span>03 AI Support</span><span class="num">2 tools</span></a></li>
+<li><a href="#retention"><span>04 Retention</span><span class="num">2 tools</span></a></li>
+<li><a href="#content"><span>05 Content</span><span class="num">2 tools</span></a></li>
+<li><a href="#personalization"><span>06 Personalization</span><span class="num">2 tools</span></a></li>
+<li><a href="#ads"><span>07 Ad Creative</span><span class="num">2 tools</span></a></li>
+<li><a href="#ops"><span>08 Ops & Fulfillment</span><span class="num">1 tool</span></a></li>
+<li><a href="#compare"><span>09 Compare all 12</span><span class="num">→</span></a></li>
+<li><a href="#faq"><span>10 FAQ</span><span class="num">→</span></a></li>
+</ul>
+</aside>
+</header>
+
+<main>
+
+<!-- ============== SECTION 1: EMAIL/SMS ============== -->
+<section class="section" id="email">
+<div class="container">
+<div class="section-head"><div class="label">01 — Email & SMS Marketing</div><h2>The <em>highest-LTV</em> AI category in ecommerce.</h2></div>
+
+<div class="prose">
+<p>If you only adopt one AI tool from this list, make it the one that owns your customer lifecycle. Email and SMS are where DTC brands compound revenue — every dollar of ad spend should drive an email opt-in, and every email opt-in is worth $1-$3/month in LTV. AI makes the channel viable at small scale (predictive send times, subject-line generation, churn scoring) and unmissable at large scale.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Shopify / BigCommerce / WooCommerce merchants doing $10K+/mo</li>
+<li>DTC founders spending $5K+/mo on Meta or TikTok ads</li>
+<li>Agencies managing email/SMS for multiple brands</li>
+<li>Anyone whose list has outgrown Mailchimp's segmentation model</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>The two tools below span free (under 250 contacts) to $1,600+/mo for large lists. Most DTC brands in the $100K-$5M revenue range pay $100-$500/mo total for email + SMS. The typical return on that spend is $5-$15 per $1 invested — email is the highest-ROI channel in ecommerce.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick · Hero CTA</div>
+<h4>Klaviyo</h4>
+<div class="tag">Email + SMS · Predictive AI · Shopify-native</div>
+<p class="desc">Industry-standard email + SMS for ecommerce. Shopify-native data sync, predictive segments (likely-to-buy, expected next order, churn risk), and AI subject-line generation. Free up to 250 contacts; scales with your list size.</p>
+<span class="price">Free – $1,600+/mo</span>
+<div class="links"><a href="https://www.klaviyo.com">Product</a><a href="https://www.klaviyo.com/pricing">Pricing</a><a href="https://www.klaviyo.com/partners">Partners</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Omnisend</h4>
+<div class="tag">Email + SMS + Push · Omnichannel</div>
+<p class="desc">If you want email + SMS + push in one tool with simpler pricing, Omnisend is the cleanest alternative. Strong Shopify/WooCommerce integration, AI subject lines, and a more approachable learning curve than Klaviyo.</p>
+<span class="price">Free – $59/mo</span>
+<div class="links"><a href="https://www.omnisend.com">Product</a><a href="https://www.omnisend.com/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Start lifecycle marketing on Klaviyo.</h3>
+<p>Free up to 250 contacts. Upgrade when your list grows or revenue crosses $5K/mo.</p>
+</div>
+<a href="https://www.klaviyo.com" rel="nofollow sponsored">Try Klaviyo free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 2: ATTRIBUTION ============== -->
+<section class="section" id="attribution">
+<div class="container">
+<div class="section-head"><div class="label">02 — Attribution & Analytics</div><h2>The <em>iOS 14.5</em> problem, solved.</h2></div>
+
+<div class="prose">
+<p>After Apple's App Tracking Transparency framework, Shopify's native analytics under-report Meta and TikTok revenue by 20-40%. If you're spending $10K+/mo on paid social and relying on Shopify's "UTM tags" view, you are flying blind on ROAS. Attribution AI tools stitch post-purchase survey data + click IDs + email engagement into a single source of truth.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands spending $10K+/mo on Meta, TikTok, or Google ads</li>
+<li>Anyone whose "real" ROAS looks suspiciously similar across channels</li>
+<li>Agencies reporting performance to brand clients</li>
+<li>Founders deciding whether to scale or cut a paid channel</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>$100-$1,000/mo per tool. The typical payback: one correct budget reallocation decision. If you're spending $50K/mo across three channels and attribution AI tells you channel #3 is actually profitable (and channel #1 is not), that one insight pays for the tool for a year.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Triple Whale</h4>
+<div class="tag">Attribution + LTV · Meta/TikTok native</div>
+<p class="desc">The de facto attribution dashboard for DTC brands in 2026. Solves iOS 14.5+ tracking loss with post-purchase surveys, click-ID stitching, and a single-source ROAS view. Predictive LTV models tell you which acquisition channel is actually profitable after 90 days, not just after the first purchase.</p>
+<span class="price">$129 – $999/mo</span>
+<div class="links"><a href="https://www.triplewhale.com">Product</a><a href="https://www.triplewhale.com/pricing">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Northbeam</h4>
+<div class="tag">Cross-channel attribution · AI LTV</div>
+<p class="desc">Stronger multi-touch attribution model than Triple Whale, especially for brands running 5+ paid channels. Slightly steeper learning curve, more agency-friendly UI, and better historical data imports if you're migrating from another tool.</p>
+<span class="price">$100 – $1,000/mo</span>
+<div class="links"><a href="https://www.northbeam.io">Product</a><a href="https://www.northbeam.io/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>See your true ROAS.</h3>
+<p>Triple Whale's standard tier covers most brands doing $100K-$3M/yr revenue.</p>
+</div>
+<a href="https://www.triplewhale.com" rel="nofollow sponsored">Start with Triple Whale →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 3: SUPPORT ============== -->
+<section class="section" id="support">
+<div class="container">
+<div class="section-head"><div class="label">03 — AI Customer Support</div><h2>Cut support cost by 30% <em>without losing NPS</em>.</h2></div>
+
+<div class="prose">
+<p>For DTC brands doing $1M+/yr, support headcount is one of the largest non-marketing operating expenses. AI support agents handle tier-1 tickets (order status, return policy, shipping questions) without human escalation — Gorgias publishes a 40-60% auto-resolution rate, Tidio's Lyro publishes similar. The realistic 2026 outcome is reducing support cost by ~30% while improving first-response time from hours to seconds.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Shopify brands doing $1M+/yr with a dedicated support rep or VA</li>
+<li>Anyone whose "Where is my order?" tickets dominate the inbox</li>
+<li>Brands expanding internationally (24/7 coverage without 24/7 staffing)</li>
+<li>Founders who want to spend less time answering DMs</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>$10-$300/mo per tool. Most brands in this category see 30-50% ticket deflection, which means either smaller support headcount or the same team handling 1.5-2x the order volume. Typical payback: 2-3 months.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Gorgias</h4>
+<div class="tag">Helpdesk · AI Agent · Shopify-native</div>
+<p class="desc">Helpdesk built specifically for ecommerce. Pulls Shopify order data into every ticket, so AI responses reference real order numbers. Gorgias AI Agent handles tier-1 automatically with macros that learn from your past replies. The most-used AI support tool by DTC brands doing $1M-$50M/yr.</p>
+<span class="price">$10 – $300/mo</span>
+<div class="links"><a href="https://www.gorgias.com">Product</a><a href="https://www.gorgias.com/pricing">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Tidio</h4>
+<div class="tag">Lyro AI chatbot · Live chat</div>
+<p class="desc">More approachable than Gorgias for sub-$1M brands. Lyro AI chatbot plugs into Shopify + WooCommerce, learns from your FAQ page and past conversations in minutes. Lower per-ticket cost, smaller learning curve, less powerful than Gorgias at scale.</p>
+<span class="price">Free – $29/mo</span>
+<div class="links"><a href="https://www.tidio.com">Product</a><a href="https://www.tidio.com/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Automate your tier-1 support.</h3>
+<p>Tidio's free tier covers up to 100 conversations — enough to test on a small store.</p>
+</div>
+<a href="https://www.tidio.com" rel="nofollow sponsored">Try Tidio free →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 4: RETENTION ============== -->
+<section class="section" id="retention">
+<div class="container">
+<div class="section-head"><div class="label">04 — Subscriptions & Retention</div><h2>The LTV <em>compounding</em> tools.</h2></div>
+
+<div class="prose">
+<p>Acquiring a new DTC customer costs 3-7x more than retaining one. Subscription and retention tools turn one-time buyers into recurring revenue — and the AI layer optimizes reorder timing, churn prediction, and subscription box curation. For brands selling consumables, supplements, pet food, beauty, or coffee, this category is non-optional.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands selling consumables or any product with natural repurchase cadence</li>
+<li>Subscription box companies</li>
+<li>Anyone whose 90-day repeat purchase rate is below 15%</li>
+<li>Brands ready to add a "Subscribe & Save" tier</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>Recharge is per-transaction ($0.05-$0.40), so cost scales with revenue. Yotpo's bundle (reviews + loyalty + subscriptions) starts at $19/mo. Typical subscription program drives 15-25% of total revenue within 6 months.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Recharge</h4>
+<div class="tag">Subscription billing · DTC standard</div>
+<p class="desc">The subscription billing platform that powers most DTC subscription brands. Smart routing (one-off vs subscribe decisions), AI churn prediction, and the deepest Shopify integration in the category. The default for any brand moving from one-time to recurring revenue.</p>
+<span class="price">$0.05 – $0.40 per transaction</span>
+<div class="links"><a href="https://rechargepayments.com">Product</a><a href="https://rechargepayments.com/pricing">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Yotpo</h4>
+<div class="tag">Reviews + Loyalty + Subscriptions</div>
+<p class="desc">Three retention tools in one: product reviews, loyalty/rewards programs, and subscriptions. Less specialized than Recharge on the subscription side, but the reviews and loyalty modules are best-in-class — and AI-generated review summaries boost conversion on PDPs by 5-10%.</p>
+<span class="price">$19 – $319/mo</span>
+<div class="links"><a href="https://www.yotpo.com">Product</a><a href="https://www.yotpo.com/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Turn one-time buyers into subscribers.</h3>
+<p>Recharge's pricing scales with your order volume — you pay as you grow.</p>
+</div>
+<a href="https://rechargepayments.com" rel="nofollow sponsored">Explore Recharge →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 5: CONTENT ============== -->
+<section class="section" id="content">
+<div class="container">
+<div class="section-head"><div class="label">05 — AI Product Content</div><h2>From blank page to <em>100 PDPs</em> in an afternoon.</h2></div>
+
+<div class="prose">
+<p>The bottleneck for most ecommerce stores is not the products — it's the words on the page. AI content tools write product descriptions, FAQ sections, meta descriptions, and ad copy at scale. The two picks below are chosen because they understand ecommerce specifically (not generic copywriters with an "ecommerce template" bolted on).</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands with 100+ SKUs and inconsistent PDP copy quality</li>
+<li>Anyone doing catalog expansion (new products, new variants, new markets)</li>
+<li>Agencies managing content for multiple brands</li>
+<li>Founders who would rather not write 50 product descriptions themselves</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>Shopify Magic is free with Shopify. Jasper and Copy.ai are $49-$249/mo. The typical use case pays for itself within a week: a 500-SKU catalog that takes 6 weeks to write manually takes 2 days with AI tools and a human editor.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick · Free</div>
+<h4>Shopify Magic (Sidekick)</h4>
+<div class="tag">AI product descriptions · Built-in</div>
+<p class="desc">Shopify's built-in AI. Generates product descriptions, FAQ sections, email subject lines, and meta descriptions using your store's existing tone. Free with any Shopify plan — there is no reason not to use it. The Sidekick assistant also handles merchant-side questions ("which product sold best last month?").</p>
+<span class="price">Included with Shopify</span>
+<div class="links"><a href="https://www.shopify.com/sidekick">Product</a><a href="https://help.shopify.com/en/manual/shopify-admin/productivity-tools/shopify-magic">Docs</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Jasper</h4>
+<div class="tag">Long-form AI · Brand voice</div>
+<p class="desc">When you need more than product descriptions — landing pages, blog posts, ad copy, email sequences — Jasper's brand-voice training and ecommerce workflows templates cover it. More expensive than Shopify Magic, but the brand-voice consistency matters at scale. (See our <a href="https://aldow3n-a11y.github.io/best-ai-freelancers/">best AI for freelancers</a> roundup for the full Jasper review.)</p>
+<span class="price">$49 – $125/mo</span>
+<div class="links"><a href="https://jasper.ai">Product</a><a href="https://jasper.ai/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Already on Shopify? Magic is already on.</h3>
+<p>No install, no extra cost. Sidekick lives in your Shopify admin.</p>
+</div>
+<a href="https://www.shopify.com/sidekick" rel="nofollow sponsored">Learn Shopify Magic →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 6: PERSONALIZATION ============== -->
+<section class="section" id="personalization">
+<div class="container">
+<div class="section-head"><div class="label">06 — Conversion Personalization</div><h2>The <em>5-15% conversion lift</em> hiding in your product pages.</h2></div>
+
+<div class="prose">
+<p>Personalization tools use AI to dynamically reshape product pages, recommend bundles, and run quizzes that route shoppers to the right product. The category is dominated by three use cases: post-purchase upsells (Rebuy), quiz-based product finder (Octane AI), and SMS-driven personalization (Postscript). Average lift on conversion: 5-15%.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands with 100+ SKUs where shoppers struggle to choose</li>
+<li>Stores with AOV below $60 (post-purchase upsells pay for everything)</li>
+<li>Supplement / skincare / apparel brands with "finder" potential</li>
+<li>Anyone whose checkout abandonment is above 70%</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>Rebuy is $250-$1,500+/mo (premium because it scales with revenue). Octane AI is $50-$500+/mo. Postscript is usage-based SMS pricing. Typical payback: 1-3 months for any store doing $50K+/mo.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>Rebuy</h4>
+<div class="tag">AI recommendations · Post-purchase upsells</div>
+<p class="desc">The post-purchase upsell tool that pays for itself within a week for most stores. AI product recommendations on PDPs, in-cart, and (most importantly) on the thank-you page where conversion is highest. The data shows Rebuy customers average 10-20% AOV lift in the first 60 days.</p>
+<span class="price">$250 – $1,500+/mo</span>
+<div class="links"><a href="https://rebuyengine.com">Product</a><a href="https://rebuyengine.com/pricing">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Octane AI</h4>
+<div class="tag">Quiz personalization · Shopify Plus</div>
+<p class="desc">The best-in-class quiz personalization tool. "Find your supplement" / "Find your skincare routine" — these quizzes convert 2-4x better than static product pages for brands with complex catalogs. AI dynamically routes shoppers based on their answers and learns from conversion data over time.</p>
+<span class="price">$50 – $500+/mo</span>
+<div class="links"><a href="https://www.octaneai.com">Product</a><a href="https://www.octaneai.com/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Lift AOV with post-purchase upsells.</h3>
+<p>Rebuy's standard plan covers most stores doing $100K-$5M/yr revenue.</p>
+</div>
+<a href="https://rebuyengine.com" rel="nofollow sponsored">Start with Rebuy →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 7: ADS ============== -->
+<section class="section" id="ads">
+<div class="container">
+<div class="section-head"><div class="label">07 — AI Ad Creative</div><h2>Ship <em>50 ad variants</em> per week without a designer on call.</h2></div>
+
+<div class="prose">
+<p>The bottleneck on paid social isn't targeting — it's creative. Meta and TikTok reward fresh creative, and AI ad tools generate ad images, videos, and UGC-style content at volume. The three picks below span static ads (AdCreative.ai), video ads (Creatify), and AI-generated UGC actors (Arcads).</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands spending $10K+/mo on Meta or TikTok</li>
+<li>Anyone whose creative team can't keep up with ad iteration cadence</li>
+<li>DTC founders who need to test 20+ hooks/week</li>
+<li>Agencies managing creative for multiple brands</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>$19-$500/mo per tool. The typical use case: 1 designer or media buyer can now ship 5-10x more creative variants per week. If your account is constrained by creative fatigue, one of these tools pays for itself in the first month.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>AdCreative.ai</h4>
+<div class="tag">AI ad creative · Multi-platform</div>
+<p class="desc">The fastest path from "I need a new ad" to "here are 20 variants." Generates static and short-form video ads optimized per platform (Meta, TikTok, LinkedIn, Pinterest). The AI has been trained on real ad performance data, so the generated creatives rank by predicted conversion score.</p>
+<span class="price">$29 – $399/mo</span>
+<div class="links"><a href="https://www.adcreative.ai">Product</a><a href="https://www.adcreative.ai/pricing">Pricing</a></div>
+</div>
+<div class="tool-card">
+<div class="rank">Runner-up</div>
+<h4>Creatify</h4>
+<div class="tag">URL-to-video ads · AI UGC</div>
+<p class="desc">Paste a product URL, get a 15-30 second video ad with an AI actor holding/talking about the product. Less polished than a real UGC shoot, much faster, and A/B-testable. Best for early-stage brands that need UGC-style content without creator outreach.</p>
+<span class="price">$19 – $99/mo</span>
+<div class="links"><a href="https://creatify.ai">Product</a><a href="https://creatify.ai/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Kill creative fatigue forever.</h3>
+<p>AdCreative.ai's Starter plan covers up to 10 users — enough for a small team.</p>
+</div>
+<a href="https://www.adcreative.ai" rel="nofollow sponsored">Try AdCreative.ai →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== SECTION 8: OPS ============== -->
+<section class="section" id="ops">
+<div class="container">
+<div class="section-head"><div class="label">08 — Ops & Fulfillment AI</div><h2>The <em>invisible layer</em> that keeps customers happy.</h2></div>
+
+<div class="prose">
+<p>For most DTC brands, ops & fulfillment AI is less about ML-driven optimization and more about avoiding the disasters (overselling, shipping delays, stockouts) that kill LTV. ShipBob and Cin7 use AI for inventory forecasting, demand planning, and warehouse routing. We include one — the one most DTC brands under $10M/yr actually use.</p>
+
+<h3>Who this section is for</h3>
+<ul>
+<li>Brands doing $1M+/yr with their own inventory or 3PL relationship</li>
+<li>Multi-channel sellers (Shopify + Amazon + wholesale)</li>
+<li>Anyone whose stockouts cost more than the tool subscription</li>
+<li>Founders spending 5+ hours/week on inventory reconciliation</li>
+</ul>
+
+<h3>What it costs (and what it returns)</h3>
+<p>Usage-based pricing, typically $100-$1,000/mo. The return is operational: fewer stockouts, less deadstock, fewer "out of stock" emails to angry customers. Hard to quantify, easy to feel.</p>
+</div>
+
+<div class="tool-grid">
+<div class="tool-card">
+<div class="rank">Editor's pick</div>
+<h4>ShipBob</h4>
+<div class="tag">Fulfillment network · AI inventory</div>
+<p class="desc">A 3PL fulfillment network with built-in AI for inventory forecasting, demand planning, and warehouse routing. The dashboard tells you when to reorder before stockouts happen. For brands doing $1M-$50M/yr, ShipBob is the default choice — they're the 3PL that DTC founders actually pick.</p>
+<span class="price">Usage-based · from ~$100/mo</span>
+<div class="links"><a href="https://www.shipbob.com">Product</a><a href="https://www.shipbob.com/pricing">Pricing</a></div>
+</div>
+</div>
+
+<div class="cta-band">
+<div>
+<h3>Outsource fulfillment, keep the AI.</h3>
+<p>ShipBob's WRO (Warehouse Receiving Order) onboarding gets you live in 2-4 weeks.</p>
+</div>
+<a href="https://www.shipbob.com" rel="nofollow sponsored">Get a ShipBob quote →</a>
+</div>
+</div>
+</section>
+
+<!-- ============== COMPARE TABLE ============== -->
+<section class="section" id="compare">
+<div class="container">
+<div class="section-head"><div class="label">09 — Comparison</div><h2>All 12 tools, <em>side by side</em>.</h2></div>
+
+<table class="compare">
+<thead>
+<tr><th>Tool</th><th>Category</th><th>Starting price</th><th>Best for</th></tr>
+</thead>
+<tbody>
+<tr><td>Klaviyo</td><td>Email + SMS</td><td>Free – $1,600+/mo</td><td>Shopify-native lifecycle marketing at any scale</td></tr>
+<tr><td>Omnisend</td><td>Email + SMS + Push</td><td>Free – $59/mo</td><td>Simpler alternative to Klaviyo for sub-$1M brands</td></tr>
+<tr><td>Triple Whale</td><td>Attribution</td><td>$129 – $999/mo</td><td>True ROAS after iOS 14.5 attribution loss</td></tr>
+<tr><td>Northbeam</td><td>Attribution</td><td>$100 – $1,000/mo</td><td>5+ paid channels, multi-touch attribution</td></tr>
+<tr><td>Gorgias</td><td>AI Support</td><td>$10 – $300/mo</td><td>Shopify-native helpdesk + AI Agent</td></tr>
+<tr><td>Tidio</td><td>AI Support</td><td>Free – $29/mo</td><td>Plug-and-play AI chatbot for small stores</td></tr>
+<tr><td>Recharge</td><td>Subscriptions</td><td>Per transaction</td><td>Subscribe & Save programs at any scale</td></tr>
+<tr><td>Yotpo</td><td>Reviews + Loyalty</td><td>$19 – $319/mo</td><td>Reviews + loyalty + subscriptions bundle</td></tr>
+<tr><td>Shopify Magic</td><td>AI Content</td><td>Included</td><td>Product descriptions + Sidekick assistant</td></tr>
+<tr><td>Jasper</td><td>AI Content</td><td>$49 – $125/mo</td><td>Brand-voice long-form copy at scale</td></tr>
+<tr><td>Rebuy</td><td>Personalization</td><td>$250 – $1,500+/mo</td><td>Post-purchase upsells + recommendations</td></tr>
+<tr><td>Octane AI</td><td>Personalization</td><td>$50 – $500+/mo</td><td>Quiz-based product finders</td></tr>
+<tr><td>AdCreative.ai</td><td>Ad Creative</td><td>$29 – $399/mo</td><td>AI static + video ad creative at volume</td></tr>
+<tr><td>Creatify</td><td>Ad Creative</td><td>$19 – $99/mo</td><td>URL-to-video UGC-style ads</td></tr>
+<tr><td>ShipBob</td><td>Fulfillment</td><td>Usage-based</td><td>3PL with AI inventory forecasting</td></tr>
+</tbody>
+</table>
+
+<div class="disclosure">Affiliate disclosure: Some links on this page are affiliate links. If you purchase through them, this site may earn a commission at no cost to you. Affiliate programs never influenced our editorial picks — every tool here was selected because working DTC operators use it on real Shopify stores. We prioritized tools with public, verifiable affiliate or partner programs.</div>
+</div>
+</section>
+
+<!-- ============== FAQ ============== -->
+<section class="section" id="faq">
+<div class="container">
+<div class="section-head"><div class="label">10 — FAQ</div><h2>Questions <em>DTC operators actually ask</em>.</h2></div>
+
+<div class="faq">
+<details open>
+<summary>What is the single best AI tool for ecommerce in 2026?</summary>
+<div class="answer">For email/SMS and lifecycle marketing, Klaviyo is the default — Shopify-native, predictive AI, scales with your list. Pair it with Triple Whale (or Northbeam) for attribution, Gorgias (or Tidio) for AI support, and Shopify Magic for content. That four-stack covers ~80% of a DTC brand's AI surface area.</div>
+</details>
+<details>
+<summary>Is Klaviyo worth the price for a small Shopify store?</summary>
+<div class="answer">Klaviyo is free up to 250 contacts. Once you cross that, the $45/mo Email tier is worth it the moment your store does ~$5K/mo revenue. The predictive analytics (likely-to-buy, expected next order) usually pay for the subscription within the first campaign. For sub-$5K/mo stores, Omnisend's free tier is the better starting point.</div>
+</details>
+<details>
+<summary>What does Triple Whale do that Shopify analytics doesn't?</summary>
+<div class="answer">Triple Whale solves iOS 14.5+ attribution loss. After Apple's App Tracking Transparency framework, Shopify's native analytics under-report Meta and TikTok revenue by 20-40%. Triple Whale stitches post-purchase survey data + click IDs + email engagement to give a single-source ROAS dashboard — critical for any brand spending $10K+/mo on paid social.</div>
+</details>
+<details>
+<summary>Can AI handle ecommerce customer support end-to-end?</summary>
+<div class="answer">Tier-1 support (order status, return policy, shipping questions): yes, Gorgias AI Agent or Tidio Lyro can auto-resolve 40-60% of tickets without a human. Tier-2 (complex returns, exchanges, escalations): still needs a human. The realistic 2026 outcome is reducing support headcount cost by ~30% while improving first-response time.</div>
+</details>
+<details>
+<summary>Do these tools replace a growth marketer?</summary>
+<div class="answer">No — they replace the boring 60% of a growth marketer's day: subject-line A/B tests, send-time optimization, attribution reconciliation, basic reporting. The remaining 40% — campaign strategy, creative direction, segmentation design, LTV modeling — is still human. Marketers using this stack typically run 2-3x more experiments per month.</div>
+</details>
+<details>
+<summary>How often is this list updated?</summary>
+<div class="answer">Every quarter. The ecommerce AI space moves as fast as marketing AI — a tool that's #1 today (Triple Whale) may be #4 next month when a new attribution entrant launches. Last refresh: August 2026.</div>
+</details>
+</div>
+</div>
+</section>
+
+<!-- ============== SUBSCRIBE / LEADS ============== -->
+<section class="section" id="alerts">
+<div class="container">
+<div class="section-head"><div class="label">Free · No signup wall</div><h2>Get the <em>quarterly update</em> by email.</h2></div>
+<div class="prose">
+<p>When one of these tools changes pricing, gets acquired, or a new contender enters the top 12, you'll know first. One email per quarter, no autoresponder sequences.</p>
+<form class="subscribe" id="subForm" action="https://formsubmit.co/ajax/discus.leads@protonmail.com" method="POST">
+<input type="email" name="email" placeholder="you@yourbrand.com" required>
+<button type="submit">Subscribe</button>
+</form>
+<div class="subscribe-status" id="subStatus"></div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div>© 2026 Best AI for Ecommerce · Built by Discus</div>
+<div>
+<a href="/best-ai-ecommerce/">Home</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-freelancers/">Best AI for Freelancers</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-realtor/">Best AI for Realtors</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-lawyers/">Best AI for Lawyers</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-accountants/">Best AI for Accountants</a> ·
+<a href="https://aldow3n-a11y.github.io/best-ai-designers/">Best AI for Designers</a> ·
+<a href="https://aldow3n-a11y.github.io/ai-quality-jobs/">AI Quality Jobs</a>
+</div>
+</div>
+</footer>
+
+</main>
+
+<script>
+(function(){
+  var f=document.getElementById('subForm');
+  var s=document.getElementById('subStatus');
+  if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    s.textContent='Sending…';
+    var data=new FormData(f);
+    fetch(f.action,{
+      method:'POST',
+      body:data,
+      headers:{'Accept':'application/json'}
+    }).then(function(r){
+      if(r.ok){s.textContent='✓ Subscribed. Check your inbox in ~30 sec for confirmation.';f.reset();}
+      else{s.textContent='Something went wrong. Email discus.leads@protonmail.com directly.';}
+    }).catch(function(){s.textContent='Network error. Try again or email directly.';});
+  });
+})();
+</script>
+
+</body>
+</html>
